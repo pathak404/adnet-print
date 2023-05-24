@@ -16,7 +16,7 @@ function searchInput(e) {
     if (width <= 440) {
         qs(".site-header form.search").classList.toggle("opened");
         // add hidden to content
-        generateHidden("div#page-content");
+        generateHidden("div.page-content");
     }
     if (searchInputEle.classList.contains("opened")) {
         searchInputEle.focus();
@@ -173,6 +173,11 @@ if (qsa('.single-product .variable-items-wrapper[data-attribute_name="attribute_
 
 
 jQuery(document).ready(function ($) {
+    // header
+    $('.header-bottom .navbar-nav .nav-item .nav-link').on("mouseenter", (ele) => {
+        (ele.target).click()
+    });
+
 
     $(document).on('click', 'button.cart-plus, button.cart-minus', function () {
 

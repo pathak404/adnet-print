@@ -22,16 +22,20 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<!-- page wrapper -->
+<div class="page-wrapper">
 <!--page-->
-<div id="page" class="site">
+<div class="page">
+
     <a class="skip-link screen-reader-text"
        href="#primary"><?php esc_html_e( 'Skip to content', 'adnet-printing' ); ?></a>
 
     <!--Header-->
-    <header class="site-header position-relative top-0 bg-white border-bottom" id="masthead">
+    <header class="site-header position-relative top-0 bg-white pt-lg-2 border-black border-bottom" id="masthead">
 		<?php $categories = get_terms( [ 'taxonomy' => 'product_cat', 'hide_empty' => false ] ); ?>
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid px-lg-5 d-flex align-items-center justify-content-between justify-content-lg-evenly">
+            <div class="container-fluid px-lg-5 d-flex align-items-center justify-content-between">
 
                 <div class="brand d-inline-flex">
                     <button class="navbar-toggler border-0 fs-5 ps-0" type="button" data-bs-toggle="offcanvas"
@@ -43,7 +47,7 @@
 
 
                 <div class="d-inline-flex">
-                    <form class="d-flex bg-white search me-3" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <form class="d-flex bg-white search mx-lg-4 me-3 w-100" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <input class="form-control search-input order-2" type="text" placeholder="Search for products"
                                aria-label="Search" onfocusout="searchInput(event);" value="<?php echo get_search_query(); ?>" name="s">
                         <span class="input-group-text" onclick="searchInput(event);"><i class="bi bi-search"></i></span>
@@ -118,7 +122,13 @@
 
                     <div class="offcanvas-body">
                         <!-- above lg -->
-                        <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 d-none d-lg-flex">
+                        <ul class="navbar-nav justify-content-end align-items-center pe-3 d-none d-lg-flex">
+                            <li class="nav-item pe-3">
+                                <a href="tel:+919830732700" class="nav-link d-inline-flex align-items-center text-black">
+                                    <i class="bi bi-telephone fs-5 pe-2 pt-1"></i>
+                                    <span>9830732700</span>
+                                </a>
+                            </li>
                             <li class="nav-item pe-3 dropdown">
                                 <a class="nav-link d-flex align-items-center text-black dropdown-toggle fw-bold"
                                    data-bs-toggle="dropdown" aria-expanded="false" href="#"><i
@@ -276,28 +286,24 @@
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center position-relative" href="https://wa.me/919830732700?text=Hello%20...">
                                     <i class="bi bi-whatsapp fs-5 pe-2"></i>
-                                    <span>+91 9830732700</span>
+                                    <span>9830732700</span>
                                 </a>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <div class="header-bottom d-none d-lg-block border-bottom">
-            <div class="container py-2">
-                <ul class="navbar-nav flex-row align-items-center justify-content-between overflow-auto">
+        <div class="header-bottom px-lg-4 d-none d-lg-block mt-1">
+                <ul class="navbar-nav d-flex flex-row align-items-stretch justify-content-between">
                     <li class="nav-item">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
                             All
                             Products
                         </a>
                         <ul class="dropdown-menu anm-slide-out">
-                            <div class="container">
-                                <div class="row mw-100 my-2">
+                                <div class="row mw-100 my-2 px-4">
 									<?php
 									foreach ( $categories as $category ):
                                         if ($category->slug == "uncategorized") continue;
@@ -312,7 +318,6 @@
 										<?php endif;
 									endforeach; ?>
                                 </div>
-                            </div>
                         </ul>
                     </li>
 
@@ -322,7 +327,7 @@
 						<?php if ( $category->parent == 0 ): ?>
                             <li class="nav-item">
                                 <a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>"
-                                   class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                   class="nav-link" data-bs-toggle="dropdown" aria-expanded="false">
 									<?php echo $category->name; ?>
                                 </a>
 
@@ -333,8 +338,8 @@
 									return $cat->parent == $category->term_id;
 								} ); ?>
                                 <ul class="dropdown-menu anm-slide-out">
-                                    <div class="container">
-                                        <div class="row mw-100 my-2">
+
+                                        <div class="row mw-100 my-2 px-4">
 
 
 								<?php foreach ( $subCategories as $sub_category ):
@@ -370,16 +375,14 @@
                                                 </div>
 								<?php endforeach; ?>
                                         </div>
-                                    </div>
                                 </ul>
                             </li>
 						<?php endif; ?>
 					<?php endforeach; ?>
                 </ul>
             </div>
-        </div>
     </header>
     <!--End Header-->
 
-    <!--Page Content-->
-    <div id="page-content">
+    <!--page content-->
+    <div class="page-content">

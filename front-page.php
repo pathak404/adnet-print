@@ -18,7 +18,8 @@ get_header();
         <div class="container-fluid p-0 m-0">
             <a href="/shop">
                 <picture>
-                    <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner-small.jpg">
+                    <source media="(max-width: 767px)"
+                            srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner-small.jpg">
                     <img alt="adnet print banner"
                          src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner.jpeg"
                          class="img-fluid">
@@ -27,9 +28,6 @@ get_header();
         </div>
     </main>
     <!-- end main -->
-
-
-
 
 
     <!-- popular products -->
@@ -119,10 +117,6 @@ if (!empty($products)): ?>
     <!-- end trending products -->
 
 
-
-
-
-
     <!-- branded clothing -->
 <?php
 $products = get_posts(array(
@@ -166,10 +160,6 @@ if (!empty($products)): ?>
     <!-- end branded clothing -->
 
 
-
-
-
-
     <!-- banner -->
     <section class="bg-white banner py-5">
         <div class="container-fluid position-relative">
@@ -200,9 +190,6 @@ if (!empty($products)): ?>
         </div>
     </section>
     <!-- end banner -->
-
-
-
 
 
     <!--  Categories  -->
@@ -284,13 +271,10 @@ if (!empty($products)): ?>
                         <?php }
                     } ?>
                 </div>
-
             </div>
-        </div>
         </div>
     </section>
     <!--  End Categories  -->
-
 
 
     <!-- Features -->
@@ -300,7 +284,7 @@ if (!empty($products)): ?>
 
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="hstack gap-2">
-                        <img src="<?php echo get_template_directory_uri()."/assets/images/features/83.svg" ?>" alt="">
+                        <img src="<?php echo get_template_directory_uri() . "/assets/images/features/83.svg" ?>" alt="">
                         <div class="details ms-auto">
                             <p class="fw-bold mb-0">Fast Delivery</p>
                             <p>
@@ -312,7 +296,7 @@ if (!empty($products)): ?>
 
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="hstack gap-2">
-                        <img src="<?php echo get_template_directory_uri()."/assets/images/features/58.svg" ?>" alt="">
+                        <img src="<?php echo get_template_directory_uri() . "/assets/images/features/58.svg" ?>" alt="">
                         <div class="details ms-auto">
                             <p class="fw-bold mb-0">Easy Order</p>
                             <p>
@@ -324,7 +308,7 @@ if (!empty($products)): ?>
 
                 <div class="col-12 col-md-6 col-xl-4">
                     <div class="hstack gap-2">
-                        <img src="<?php echo get_template_directory_uri()."/assets/images/features/93.svg" ?>" alt="">
+                        <img src="<?php echo get_template_directory_uri() . "/assets/images/features/93.svg" ?>" alt="">
                         <div class="details ms-auto">
                             <p class="fw-bold mb-0">Best Quality</p>
                             <p>

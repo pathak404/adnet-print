@@ -10,8 +10,9 @@
  */
 
 ?>
+
 </div>
-<!--End Page Content-->
+<!--End page content-->
 
 <!--Footer-->
     <footer class="pt-3 pt-sm-5 site-footer">
@@ -124,13 +125,19 @@
             </div>
         </div>
     </footer>
-<!-- End footer -->
+    <!-- End footer -->
+
     <div class="position-fixed" style="bottom: 40px; right: 10px;z-index: 5">
         <a href="https://wa.me/919830732700?text=Hello%20..."><img src="<?php echo get_template_directory_uri(). '/assets/images/whatsapp.png' ?>" alt="whatsapp contact" style="width: 38px; height: 38px"></a>
     </div>
 
+
+
 </div>
-<!-- End page -->
+<!-- End Page -->
+
+</div>
+<!-- End page wrapper-->
 
 <?php wp_footer(); ?>
 

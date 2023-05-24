@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.2' );
+	define( '_S_VERSION', '1.0.3' );
 }
 
 /**
@@ -144,7 +144,7 @@ function adnet_printing_scripts(): void {
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.bundle.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main2.js', array(), _S_VERSION, true );
 
 	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat', array(), _S_VERSION);
 	wp_enqueue_style( 'poppins', 'https://fonts.googleapis.com/css2?family=Poppins', array(), _S_VERSION);
@@ -153,7 +153,7 @@ function adnet_printing_scripts(): void {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), _S_VERSION );
 	wp_enqueue_style( 'bootstrap-icon', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css', array(), _S_VERSION );
 	wp_enqueue_style( 'swiper', get_template_directory_uri() . '/assets/css/swiper.bundle.min.css', array(), _S_VERSION );
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main-new1.css', array(), _S_VERSION );
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main-new2.css', array(), _S_VERSION );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
