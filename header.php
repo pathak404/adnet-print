@@ -163,7 +163,7 @@
                                 <a class="nav-link d-flex align-items-center text-black position-relative fw-bold"
                                    href="<?php echo wc_get_cart_url(); ?>">
                                     <i class="bi bi-bag fs-5 pe-2"></i>
-                                    <span>Bag</span>
+                                    <span>Cart</span>
                                     <?php if(count( WC()->cart->get_cart() ) > 0 ): ?>
                                     <span class="position-absolute start-100 bg-danger rounded-circle text-white text-center adnet_cart_item_count" style="font-size: 12px;width:18px;height:18px;">
                                         <?php echo count( WC()->cart->get_cart() ) ?>
