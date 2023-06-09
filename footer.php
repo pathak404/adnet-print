@@ -33,9 +33,9 @@
                                         Proud to offer the highest quality custom online printing services for businesses and creative individuals.
                                     </p>
                                     <ul class="list-unstyled d-flex">
-                                        <li class="ms-1"><a class="link-dark" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
-                                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
-                                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
+                                        <li class="ms-1"><a class="link-dark" href="https://www.facebook.com/people/Adnet-Print/100090654965087/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-4"></i></a></li>
+<!--                                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fs-4"></i></a></li>-->
+                                        <li class="ms-3"><a class="link-dark" href="https://www.youtube.com/channel/UCX9_oi7eGKbP9c-iZpn7gxg" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube fs-4"></i></a></li>
                                     </ul>
                                 </div>
 
@@ -82,9 +82,9 @@
                         Proud to offer the highest quality custom online printing services for businesses and creative individuals.
                     </p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-1"><a class="link-dark" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
-                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter fs-4"></i></a></li>
+                        <li class="ms-1"><a class="link-dark" href="https://www.facebook.com/people/Adnet-Print/100090654965087/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <!-- <li class="ms-3"><a class="link-dark" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-4"></i></a></li> -->
+                        <li class="ms-3"><a class="link-dark" href="https://www.youtube.com/channel/UCX9_oi7eGKbP9c-iZpn7gxg" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube fs-4"></i></a></li>
                     </ul>
                 </div>
 
@@ -127,9 +127,9 @@
     </footer>
     <!-- End footer -->
 
-    <div class="position-fixed" style="bottom: 40px; right: 10px;z-index: 5">
-        <a href="https://wa.me/919830732700?text=Hello%20..."><img src="<?php echo get_template_directory_uri(). '/assets/images/whatsapp.png' ?>" alt="whatsapp contact" style="width: 38px; height: 38px"></a>
-    </div>
+<!--    <div class="position-fixed" style="bottom: 40px; right: 10px;z-index: 5">-->
+<!--        <a href="https://wa.me/919830732700?text=Hello%20..."><img src="--><?php //echo get_template_directory_uri(). '/assets/images/whatsapp.png' ?><!--" alt="whatsapp contact" style="width: 38px; height: 38px"></a>-->
+<!--    </div>-->
 
 
 
