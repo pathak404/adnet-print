@@ -47,14 +47,14 @@ $redirect_url = isset($_GET["redirect_to"]) && !empty($_GET["redirect_to"]) ? wp
                                     <label for="username"><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>
                                         &nbsp;<span class="required">*</span></label>
                                     <input type="text"
-                                           class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-info border-2"
+                                           class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-gray border-2"
                                            name="username" id="username" autocomplete="username"
                                            value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
                                 </p>
                                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                                     <label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span
                                                 class="required">*</span></label>
-                                    <input class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-info border-2"
+                                    <input class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-gray border-2"
                                            type="password"
                                            name="password" id="password" autocomplete="current-password"/>
                                 </p>

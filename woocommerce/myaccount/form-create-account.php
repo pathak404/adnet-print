@@ -43,7 +43,7 @@ $redirect_url = isset($_GET["redirect_to"]) && !empty($_GET["redirect_to"]) ? wp
 
                                 </label>
                                 <input type="text"
-                                       class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-info border-2"
+                                       class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-gray border-2"
                                        name="username" id="reg_username" autocomplete="username"
                                        value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
                             </p>
@@ -55,7 +55,7 @@ $redirect_url = isset($_GET["redirect_to"]) && !empty($_GET["redirect_to"]) ? wp
                                 &nbsp;
                             </label>
                             <input type="email"
-                                   class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-info border-2"
+                                   class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-gray border-2"
                                    name="email" id="reg_email" autocomplete="email"
                                    value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
                         </p>
@@ -67,7 +67,7 @@ $redirect_url = isset($_GET["redirect_to"]) && !empty($_GET["redirect_to"]) ? wp
                                     &nbsp;
                                 </label>
                                 <input type="password"
-                                       class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-info border-2"
+                                       class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-gray border-2"
                                        name="password" id="reg_password" autocomplete="new-password"/>
                             </p>
 

@@ -33,7 +33,7 @@ do_action( 'woocommerce_before_lost_password_form' );
 
                             <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                                 <label for="user_login"><?php esc_html_e( 'Username or email', 'woocommerce' ); ?></label>
-                                <input class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-info border-2"
+                                <input class="woocommerce-Input woocommerce-Input--text input-text p-2 rounded border border-gray border-2"
                                        type="text"
                                        name="user_login" id="user_login" autocomplete="username"/>
                             </p>
