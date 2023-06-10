@@ -57,7 +57,7 @@ if (!empty($products)): ?>
                         <div class="swiper-slide">
                             <a href="<?php echo get_permalink($product->ID); ?>">
                                 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($product->ID)); ?>"
-                                     alt="<?php echo $product->post_title; ?>" style="aspect-ratio: 1/1;">
+                                     alt="<?php echo $product->post_title; ?>" loading="lazy" style="aspect-ratio: 1/1;">
                                 <div class="title">
                                     <?php echo $product->post_title; ?> <i class="bi bi-arrow-right"></i>
                                 </div>
@@ -100,7 +100,7 @@ if (!empty($products)): ?>
                         <div class="swiper-slide">
                             <a href="<?php echo get_permalink($product->ID); ?>">
                                 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($product->ID)); ?>"
-                                     alt="<?php echo $product->post_title; ?>" style="aspect-ratio: 1/1;">
+                                     alt="<?php echo $product->post_title; ?>" loading="lazy" style="aspect-ratio: 1/1;">
                                 <div class="title">
                                     <?php echo $product->post_title; ?> <i class="bi bi-arrow-right"></i>
                                 </div>
@@ -143,7 +143,7 @@ if (!empty($products)): ?>
                         <div class="swiper-slide">
                             <a href="<?php echo get_permalink($product->ID); ?>">
                                 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($product->ID)); ?>"
-                                     alt="<?php echo $product->post_title; ?>" style="aspect-ratio: 1/1;">
+                                     alt="<?php echo $product->post_title; ?>" loading="lazy" style="aspect-ratio: 1/1;">
                                 <div class="title">
                                     <?php echo $product->post_title; ?> <i class="bi bi-arrow-right"></i>
                                 </div>
@@ -173,7 +173,7 @@ if (!empty($products)): ?>
                         </a>
                     </div>
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/part1.webp"
-                         class="w-100" alt="">
+                         class="w-100" alt="" loading="lazy">
                 </div>
                 <div class="col-12 col-md-6 p-0">
                     <div class="text-wrapper position-absolute part-2">
@@ -184,7 +184,7 @@ if (!empty($products)): ?>
                         </a>
                     </div>
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/part2.webp"
-                         class="w-100" alt="">
+                         class="w-100" loading="lazy" alt="">
                 </div>
             </div>
         </div>
@@ -210,7 +210,7 @@ if (!empty($products)): ?>
                             ?>
                             <div class="swiper-slide">
                                 <a href="<?php echo $cat_url; ?>">
-                                    <img src="<?php echo $image_url; ?>" alt="">
+                                    <img src="<?php echo $image_url; ?>" alt="" loading="lazy">
                                     <div class="title text-center">
                                         <?php echo $category->name; ?> <i class="bi bi-arrow-right"></i>
                                     </div>
@@ -241,7 +241,7 @@ if (!empty($products)): ?>
                             ?>
                             <div class="col">
                                 <a href="<?php echo $cat_url; ?>" class="text-decoration-none">
-                                    <img src="<?php echo $image_url; ?>" alt="" class="img-fluid">
+                                    <img src="<?php echo $image_url; ?>" alt="" class="img-fluid" loading="lazy">
                                     <div class="title mt-3">
                                         <h6 class="text-dark fw-bold text-center"><?php echo $category->name; ?></h6>
                                     </div>
@@ -262,7 +262,7 @@ if (!empty($products)): ?>
                             ?>
                             <div class="col">
                                 <a href="<?php echo $cat_url; ?>" class="text-decoration-none">
-                                    <img src="<?php echo $image_url; ?>" alt="" class="img-fluid">
+                                    <img src="<?php echo $image_url; ?>" alt="" class="img-fluid" loading="lazy">
                                     <div class="title mt-3">
                                         <h6 class="text-dark fw-bold text-center"><?php echo $category->name; ?></h6>
                                     </div>
