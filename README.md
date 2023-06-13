@@ -1,8 +1,8 @@
 
 # Adnet Print
 
-![PHP >= 7.4](https://img.shields.io/badge/PHP-%3E%3D7.4-blue)
-![WordPress >= 6.0](https://img.shields.io/badge/WordPress-%3E%3D6.0-blue)
+![PHP >= 7.4](https://img.shields.io/badge/PHP-%3E%3D7.4-787CB5)
+![WordPress >= 6.0](https://img.shields.io/badge/WordPress-%3E%3D6.0-00A0D2)
 
 A custom WordPress theme for e-commerce website. Adnet Print includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
