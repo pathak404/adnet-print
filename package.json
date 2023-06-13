@@ -2,20 +2,12 @@
   "name": "adnet-print",
   "version": "2.0.0",
   "description": "A WP theme for Adnet Print Company",
-  "author": "Abhishek Kumar Pathak & Automattic",
+  "author": "Abhishek Kumar Pathak",
   "license": "Copyright Abhishek Kumar Pathak, All rights reserved.",
   "keywords": [
     "WordPress",
     "Theme"
   ],
-  "homepage": "https://github.com/Automattic/_s#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Automattic/_s.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Automattic/_s/issues"
-  },
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
     "dir-archiver": "^1.1.1",
