@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Adnet_Printing
+ * @package Adnet_Print
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				adnet_printing_posted_on();
-				adnet_printing_posted_by();
+				Adnet_Print_posted_on();
+				Adnet_Print_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php adnet_printing_post_thumbnail(); ?>
+	<?php Adnet_Print_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'adnet-printing' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'adnet-print' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'adnet-printing' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'adnet-print' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php adnet_printing_entry_footer(); ?>
+		<?php Adnet_Print_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

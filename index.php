@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Adnet_Printing
+ * @package Adnet_Print
  */
 
 get_header();

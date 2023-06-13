@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Adnet_Printing
+ * @package Adnet_Print
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function adnet_printing_jetpack_setup() {
+function Adnet_Print_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'adnet_printing_infinite_scroll_render',
+			'render'    => 'Adnet_Print_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function adnet_printing_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'adnet-printing-style',
+				'stylesheet' => 'adnet-print-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function adnet_printing_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'adnet_printing_jetpack_setup' );
+add_action( 'after_setup_theme', 'Adnet_Print_jetpack_setup' );
 
-if ( ! function_exists( 'adnet_printing_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'Adnet_Print_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function adnet_printing_infinite_scroll_render() {
+	function Adnet_Print_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

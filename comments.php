@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Adnet_Printing
+ * @package Adnet_Print
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$adnet_printing_comment_count = get_comments_number();
-			if ( '1' === $adnet_printing_comment_count ) {
+			$Adnet_Print_comment_count = get_comments_number();
+			if ( '1' === $Adnet_Print_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'adnet-printing' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'adnet-print' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $adnet_printing_comment_count, 'comments title', 'adnet-printing' ) ),
-					number_format_i18n( $adnet_printing_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $Adnet_Print_comment_count, 'comments title', 'adnet-print' ) ),
+					number_format_i18n( $Adnet_Print_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'adnet-printing' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'adnet-print' ); ?></p>
 			<?php
 		endif;
 

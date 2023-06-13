@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Adnet_Printing
+ * @package Adnet_Print
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses adnet_printing_header_style()
+ * @uses Adnet_Print_header_style()
  */
-function adnet_printing_custom_header_setup() {
+function Adnet_Print_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'adnet_printing_custom_header_args',
+			'Adnet_Print_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'adnet_printing_header_style',
+				'wp-head-callback'   => 'Adnet_Print_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'adnet_printing_custom_header_setup' );
+add_action( 'after_setup_theme', 'Adnet_Print_custom_header_setup' );
 
-if ( ! function_exists( 'adnet_printing_header_style' ) ) :
+if ( ! function_exists( 'Adnet_Print_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see adnet_printing_custom_header_setup().
+	 * @see Adnet_Print_custom_header_setup().
 	 */
-	function adnet_printing_header_style() {
+	function Adnet_Print_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

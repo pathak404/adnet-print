@@ -1,4 +1,4 @@
-=== Adnet Printing ===
+=== Adnet Print ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -8,13 +8,13 @@ Tested up to: 5.4
 Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
 
-A starter theme called Adnet Printing.
+
+A starter theme called Adnet Print.
 
 == Description ==
 
-A WP theme for Adnet Printing
+A WP theme for Adnet Print
 
 == Installation ==
 
@@ -26,7 +26,7 @@ A WP theme for Adnet Printing
 
 = Does this theme support any plugins? =
 
-Adnet Printing includes support for WooCommerce and for Infinite Scroll in Jetpack.
+Adnet Print includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

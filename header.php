@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Adnet_Printing
+ * @package Adnet_Print
  */
 
 ?>
@@ -29,7 +29,7 @@
 <div class="page">
 
     <a class="skip-link screen-reader-text"
-       href="#primary"><?php esc_html_e( 'Skip to content', 'adnet-printing' ); ?></a>
+       href="#primary"><?php esc_html_e( 'Skip to content', 'adnet-print' ); ?></a>
 
     <!--Header-->
     <header class="site-header position-relative top-0 bg-white pt-lg-2 border-black border-bottom" id="masthead">
