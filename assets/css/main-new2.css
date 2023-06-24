@@ -55,7 +55,7 @@ input {
     font-family: "Poppins", sans-serif;
 }
 
-.woocommerce-Input--text.border-gray{
+.woocommerce-Input.border-gray{
     border-color: #dee2e6 !important;
 }
 .hbc:hover, 
