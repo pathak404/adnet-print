@@ -55,6 +55,15 @@ input {
     font-family: "Poppins", sans-serif;
 }
 
+.woocommerce-Input--text.border-gray{
+    border-color: #dee2e6 !important;
+}
+.hbc:hover, 
+.hbc:focus, 
+.woocommerce-Input--text.border-gray:hover,
+.woocommerce-Input--text.border-gray:focus {
+    border-color: #bfbfbf !important;
+}
 
 .anm-slide-in {
     animation-duration: 0.3s;
@@ -257,6 +266,12 @@ input {
 @media (min-width: 998px) and (max-width: 1323px) {
     .site-header .header-bottom .dropdown-menu {
         top: 177px !important;
+    }
+}
+
+@media (min-width: 1865px) {
+    .site-header .header-bottom .dropdown-menu {
+        top: 134px !important;
     }
 }
 
