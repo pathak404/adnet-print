@@ -60,8 +60,8 @@ input {
 }
 .hbc:hover, 
 .hbc:focus, 
-.woocommerce-Input--text.border-gray:hover,
-.woocommerce-Input--text.border-gray:focus {
+.woocommerce-Input.border-gray:hover,
+.woocommerce-Input.border-gray:focus {
     border-color: #bfbfbf !important;
 }
 
