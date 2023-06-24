@@ -17,7 +17,8 @@
 <!--Footer-->
     <footer class="pt-3 pt-sm-5 site-footer">
         <div class="container">
-            <div class="accordion accordion-flush d-sm-none p-0">
+            <!-- apply d-sm-none in place of d-none to enable -->
+            <div class="accordion accordion-flush d-none p-0">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="footerHead">
                         <button class="accordion-button shadow-none collapsed px-1 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">
@@ -34,7 +35,7 @@
                                     </p>
                                     <ul class="list-unstyled d-flex">
                                         <li class="ms-1"><a class="link-dark" href="https://www.facebook.com/people/Adnet-Print/100090654965087/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-4"></i></a></li>
-<!--                                        <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram fs-4"></i></a></li>-->
+                                       <li class="ms-3"><a class="link-dark" href="https://instagram.com/adnetprint"><i class="bi bi-instagram fs-4"></i></a></li>
                                         <li class="ms-3"><a class="link-dark" href="https://www.youtube.com/channel/UCX9_oi7eGKbP9c-iZpn7gxg" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube fs-4"></i></a></li>
                                     </ul>
                                 </div>
@@ -74,8 +75,8 @@
                 </div>
             </div>
 
-
-            <div class="row d-none d-sm-flex">
+            <!-- apply d-none d-sm-flex in place of d-flex -->
+            <div class="row d-flex">
                 <div class="col-12 col-md-3 mb-3">
                     <h3 class="fw-bold text-dark">Adnet Print</h3>
                     <p>
@@ -83,7 +84,7 @@
                     </p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-1"><a class="link-dark" href="https://www.facebook.com/people/Adnet-Print/100090654965087/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-4"></i></a></li>
-                        <!-- <li class="ms-3"><a class="link-dark" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-4"></i></a></li> -->
+                        <li class="ms-3"><a class="link-dark" href="https://instagram.com/adnetprint" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-4"></i></a></li>
                         <li class="ms-3"><a class="link-dark" href="https://www.youtube.com/channel/UCX9_oi7eGKbP9c-iZpn7gxg" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube fs-4"></i></a></li>
                     </ul>
                 </div>
@@ -128,7 +129,7 @@
     <!-- End footer -->
 
 <!--    <div class="position-fixed" style="bottom: 40px; right: 10px;z-index: 5">-->
-<!--        <a href="https://wa.me/919830732700?text=Hello%20..."><img src="--><?php //echo get_template_directory_uri(). '/assets/images/whatsapp.png' ?><!--" alt="whatsapp contact" style="width: 38px; height: 38px"></a>-->
+<!--        <a href="https://wa.me/WP_NUMBER?text=Hello%20..."><img src="--><?php //echo get_template_directory_uri(). '/assets/images/whatsapp.png' ?><!--" alt="whatsapp contact" style="width: 38px; height: 38px"></a>-->
 <!--    </div>-->
 
 
