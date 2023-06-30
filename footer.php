@@ -80,7 +80,8 @@
                 <div class="col-12 col-md-3 mb-3">
                     <h3 class="fw-bold text-dark">Adnet Print</h3>
                     <p>
-                        Proud to offer the highest quality custom online printing services for businesses and creative individuals.
+                    A unit of Advital brand solutions. <br/>
+                    Proud to offer the highest quality custom online printing services for businesses and creative individuals.
                     </p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-1"><a class="link-dark" href="https://www.facebook.com/people/Adnet-Print/100090654965087/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-4"></i></a></li>
