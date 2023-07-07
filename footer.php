@@ -31,6 +31,7 @@
                                 <div class="col-12 col-md-3 mb-3">
                                     <h3 class="fw-bold text-dark">Adnet Print</h3>
                                     <p>
+                                        A unit of Advital brand solutions. <br/>
                                         Proud to offer the highest quality custom online printing services for businesses and creative individuals.
                                     </p>
                                     <ul class="list-unstyled d-flex">
