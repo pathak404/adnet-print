@@ -19,9 +19,9 @@ get_header();
             <a href="/shop">
                 <picture>
                     <source media="(max-width: 767px)"
-                            srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner-small.jpg">
+                            srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner-small.webp">
                     <img alt="adnet print banner"
-                         src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner.jpeg"
+                         src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/banner.webp"
                          class="img-fluid">
                 </picture>
             </a>
