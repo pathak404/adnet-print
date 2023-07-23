@@ -139,6 +139,7 @@ const swiperExploreCategories = new Swiper('.explore-categories', {
 });
 
 
+
 const swiperProductSwiper = new Swiper('.ProductSwiper', {
     direction: "vertical",
     // Navigation arrows
@@ -147,13 +148,22 @@ const swiperProductSwiper = new Swiper('.ProductSwiper', {
         prevEl: '.ProductSwiper-button-prev',
     },
     slidesPerView: 5,
-    loop: true,
-    slideToClickedSlide: true,
+    loop: false,
 });
+
+swiperProductSwiper.on('click', function () {
+    qs(".single-product div.product-img img").src = this.clickedSlide.getElementsByTagName('img')[0].src;
+    jQuery('.ProductSwiper .swiper-wrapper .swiper-slide.swiper-slide-active').removeClass('swiper-slide-active').addClass("swiper-slide-next");
+    jQuery(this.clickedSlide).addClass('swiper-slide-active').removeClass('swiper-slide-next');
+    // swiperProductSwiper.update();
+});
+
 swiperProductSwiper.on("slideChange, slideChangeTransitionEnd", (e) => {
-    // console.log(e);
     qs(".single-product div.product-img img").src = qs(".swiper-slide-active img").src;
 });
+
+
+
 
 const swiperProductSwiper_mobile = new Swiper('.ProductSwiper-mobile', {
     pagination: {
